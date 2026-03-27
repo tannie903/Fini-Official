@@ -48,7 +48,12 @@ const Home = () => {
   return (
     <div className="Home">
 
-      <section className="hero">
+     <section 
+  className="hero" 
+  onClick={() => window.location.href = '/finweek'}
+  style={{ cursor: 'pointer' }}
+>
+        
         <div className="content">
           {/*}
           <h1>
@@ -118,18 +123,17 @@ const Home = () => {
               women-led organization that provides students with various
               opportunities that helps them to improve their financial
               knowledge, gain practical insights through workshops, seminars,
-              events and competitions with the aim of encapsulating financial
-              principles, patience, risk management in bright young minds. We
-              strive for excellence in every financial domain and connect
-              students to various shareholders of the same and nurture young
-              minds with the values of passion and self investment.
+              events and competitions with the aim of encapsulating financial 
+              principles, patience, risk management in bright young minds. 
+              We aim for excellence across all financial fields, helping students 
+              connect with key stakeholders while cultivating passion and self-investment in young minds.
             </p>
           {/*
           <div className="col-2">
             <p className="abc">
               Finivesta, the Finance and Economics society of IGDTUW, is a
               women-led organization that provides students with various
-              opportunities that helps them to enhance their financial
+              opportunities that helps them to enhance their financial 
               knowledge, gain practical insights through workshops, seminars,
               events and competitions with the aim of encapsulating financial
               principles, patience, risk management in bright young minds. We

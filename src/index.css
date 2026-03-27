@@ -28,7 +28,7 @@ code {
 }
 
 .popup-box {
-  background: linear-gradient(145deg, #2eb02e, #59a85b);
+  background: linear-gradient(145deg, #000000, #5f8e33);
   color: #f0f0f0;
   padding: 2rem 2.5rem;
   border-radius: 1.5rem;
@@ -128,7 +128,7 @@ code {
 }
 
 .popup-box {
-  background: linear-gradient(145deg, #0c4d0c, #59a85b);
+  background: linear-gradient(145deg, #000000, #5f8e33);
   color: #f0f0f0;
   padding: 2rem 2.5rem;
   border-radius: 1.5rem;

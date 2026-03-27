@@ -21,6 +21,7 @@ import Sponsor from "./Sponsors/Sponsor";
 import Resources from "./Resources/Resources";
 import MoneyMasterclass from "./Resources/MoneyMasterclass/MoneyMasterclass";
 import Newsletter from "./Resources/Newsletter/newsletter";
+import FinWeek from "./FinWeek/finweek.js";
 
 import Game from "./Games/Game.js";
 /*
@@ -61,6 +62,10 @@ import IndiaUPISystem from "./Resources/Blogs/Blogpages/IndiasUPI-system.js";
 import DigitalPayments from "./Resources/Blogs/Blogpages/digital.js";
 import IndiaEconomicGrowth from "./Resources/Blogs/Blogpages/IndiaEconomicGrowth.js";
 import EconomicGrowth from "./Resources/Blogs/Blogpages/economicgrowth.js";
+
+import LouvreHeist from "./Resources/Blogs/Blogpages/Louvre-heist.js";
+import UStariffs from "./Resources/Blogs/Blogpages/us-tariffs.js";
+import TTT from "./Resources/Blogs/Blogpages/TTT";
 
 import BookReview from "./Resources/BookReviews/BookReview";
 import Youtube from "./Resources/Youtube/Youtube";
@@ -103,6 +108,7 @@ import MoneyExplained from "./Resources/Podcasts/podcastlist/MoneyExplained";
 import MoneyControl from "./Resources/Podcasts/podcastlist/moneycontrol.js";
 
 // import FinWeek25 from './Events/FinWeek25/FinWeek25.js';
+import Hackathon from "./Hackathon/Hackathon";
 
 const AppContent = () => {
   const location = useLocation();
@@ -135,18 +141,20 @@ const AppContent = () => {
       </Helmet>
       {!isGameFullScreen && <Navbar />}
       <Layout>
-      <PopupMessage />
+        <PopupMessage />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/events" element={<Events />} />
           <Route path="/sponsors" element={<Sponsor />} />
+
+          <Route path="/hackathon" element={<Hackathon/>}/>
+          <Route path="/finweek" element={<FinWeek/>}/>
+
+          
           <Route path="/resources" element={<Resources />} />
 
           {/* Under resources */}
-          <Route
-            path="/resources/newsletter"
-            element={<Newsletter />}
-          />
+          <Route path="/resources/newsletter" element={<Newsletter />} />
           <Route
             path="/resources/moneymasterclass"
             element={<MoneyMasterclass />}
@@ -154,6 +162,7 @@ const AppContent = () => {
           <Route path="/resources/blogs" element={<Blog />} />
 
           {/* Blog pages */}
+
           <Route
             path="/resources/blogs/01-AI-in-finance"
             element={<AIinfinance />}
@@ -227,6 +236,12 @@ const AppContent = () => {
             path="/resources/blogs/19-IndiasEconomicGrowth"
             element={<IndiaEconomicGrowth />}
           />
+          <Route
+            path="/resources/blogs/20-Louvre-heist"
+            element={<LouvreHeist />}
+          />
+          <Route path="/resources/blogs/20-UStariffs" element={<UStariffs />} />
+          <Route path="/resources/blogs/20-TTT" element={<TTT />} />
 
           {/*Book pages*/}
           <Route path="/resources/bookreviews" element={<BookReview />} />
